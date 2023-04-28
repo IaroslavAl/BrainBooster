@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4341B6529FB4D870054D6F8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4341B6429FB4D870054D6F8 /* DataManager.swift */; };
+		C4341B6729FB59EB0054D6F8 /* DetailResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4341B6629FB59EB0054D6F8 /* DetailResultListViewController.swift */; };
 		C4B9F13029F82F6B00BF3A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9F12F29F82F6B00BF3A4E /* AppDelegate.swift */; };
 		C4B9F13229F82F6B00BF3A4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9F13129F82F6B00BF3A4E /* SceneDelegate.swift */; };
-		C4B9F13429F82F6B00BF3A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9F13329F82F6B00BF3A4E /* ViewController.swift */; };
 		C4B9F13729F82F6B00BF3A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B9F13529F82F6B00BF3A4E /* Main.storyboard */; };
 		C4B9F13929F82F6E00BF3A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B9F13829F82F6E00BF3A4E /* Assets.xcassets */; };
 		C4B9F13C29F82F6E00BF3A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B9F13A29F82F6E00BF3A4E /* LaunchScreen.storyboard */; };
+		C4B9F14B29F93ED800BF3A4E /* NumberMemoryEasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9F14A29F93ED800BF3A4E /* NumberMemoryEasyViewController.swift */; };
+		C4F7462829F9CD3F00EF0BBC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7462729F9CD3F00EF0BBC /* CustomTextField.swift */; };
+		C4F7462A29FAB81D00EF0BBC /* NumberMemoryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7462929FAB81D00EF0BBC /* NumberMemoryTabBarController.swift */; };
+		C4F7462C29FAB86800EF0BBC /* NumberMemoryMediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7462B29FAB86800EF0BBC /* NumberMemoryMediumViewController.swift */; };
+		C4F7462E29FAB87F00EF0BBC /* NumberMemoryHardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7462D29FAB87F00EF0BBC /* NumberMemoryHardViewController.swift */; };
+		C4F7463029FAB89700EF0BBC /* NumberMemoryExtremeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7462F29FAB89700EF0BBC /* NumberMemoryExtremeViewController.swift */; };
+		C4F7463429FADD1D00EF0BBC /* PictureMemory4x4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463329FADD1D00EF0BBC /* PictureMemory4x4ViewController.swift */; };
+		C4F7463629FADD3000EF0BBC /* PictureMemory6x6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463529FADD3000EF0BBC /* PictureMemory6x6ViewController.swift */; };
+		C4F7463829FADD6300EF0BBC /* PictureMemoryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463729FADD6300EF0BBC /* PictureMemoryTabBarController.swift */; };
+		C4F7463B29FB254900EF0BBC /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */; };
+		C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463D29FB257B00EF0BBC /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4341B6429FB4D870054D6F8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C4341B6629FB59EB0054D6F8 /* DetailResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResultListViewController.swift; sourceTree = "<group>"; };
 		C4B9F12C29F82F6B00BF3A4E /* BrainBooster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainBooster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B9F12F29F82F6B00BF3A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B9F13129F82F6B00BF3A4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4B9F13329F82F6B00BF3A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4B9F13629F82F6B00BF3A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4B9F13829F82F6E00BF3A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B9F13B29F82F6E00BF3A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4B9F13D29F82F6E00BF3A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B9F14A29F93ED800BF3A4E /* NumberMemoryEasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMemoryEasyViewController.swift; sourceTree = "<group>"; };
+		C4F7462729F9CD3F00EF0BBC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		C4F7462929FAB81D00EF0BBC /* NumberMemoryTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMemoryTabBarController.swift; sourceTree = "<group>"; };
+		C4F7462B29FAB86800EF0BBC /* NumberMemoryMediumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMemoryMediumViewController.swift; sourceTree = "<group>"; };
+		C4F7462D29FAB87F00EF0BBC /* NumberMemoryHardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMemoryHardViewController.swift; sourceTree = "<group>"; };
+		C4F7462F29FAB89700EF0BBC /* NumberMemoryExtremeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberMemoryExtremeViewController.swift; sourceTree = "<group>"; };
+		C4F7463329FADD1D00EF0BBC /* PictureMemory4x4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemory4x4ViewController.swift; sourceTree = "<group>"; };
+		C4F7463529FADD3000EF0BBC /* PictureMemory6x6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemory6x6ViewController.swift; sourceTree = "<group>"; };
+		C4F7463729FADD6300EF0BBC /* PictureMemoryTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoryTabBarController.swift; sourceTree = "<group>"; };
+		C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
+		C4F7463D29FB257B00EF0BBC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4341B6829FC1EA30054D6F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4341B6429FB4D870054D6F8 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C4B9F12329F82F6B00BF3A4E = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +88,99 @@
 		C4B9F12E29F82F6B00BF3A4E /* BrainBooster */ = {
 			isa = PBXGroup;
 			children = (
-				C4B9F12F29F82F6B00BF3A4E /* AppDelegate.swift */,
-				C4B9F13129F82F6B00BF3A4E /* SceneDelegate.swift */,
-				C4B9F13329F82F6B00BF3A4E /* ViewController.swift */,
-				C4B9F13529F82F6B00BF3A4E /* Main.storyboard */,
-				C4B9F13829F82F6E00BF3A4E /* Assets.xcassets */,
-				C4B9F13A29F82F6E00BF3A4E /* LaunchScreen.storyboard */,
-				C4B9F13D29F82F6E00BF3A4E /* Info.plist */,
+				C4F7463C29FB255500EF0BBC /* Models */,
+				C4B9F14829F91E4200BF3A4E /* ViewControllers */,
+				C4B9F14729F91D4500BF3A4E /* Storyboards */,
+				C4F7462629F9CCE100EF0BBC /* CustomViews */,
+				C4341B6829FC1EA30054D6F8 /* Services */,
+				C4B9F14529F91CE000BF3A4E /* App */,
+				C4B9F14629F91D1800BF3A4E /* Resources */,
 			);
 			path = BrainBooster;
+			sourceTree = "<group>";
+		};
+		C4B9F14529F91CE000BF3A4E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4B9F12F29F82F6B00BF3A4E /* AppDelegate.swift */,
+				C4B9F13129F82F6B00BF3A4E /* SceneDelegate.swift */,
+				C4B9F13D29F82F6E00BF3A4E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4B9F14629F91D1800BF3A4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4B9F13829F82F6E00BF3A4E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4B9F14729F91D4500BF3A4E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4B9F13529F82F6B00BF3A4E /* Main.storyboard */,
+				C4B9F13A29F82F6E00BF3A4E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C4B9F14829F91E4200BF3A4E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4B9F14929F93DC600BF3A4E /* NumberMemoryViewControllers */,
+				C4F7463229FADCEF00EF0BBC /* PictureMemoryViewControllers */,
+				C4F7463929FB23A100EF0BBC /* ResultsViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4B9F14929F93DC600BF3A4E /* NumberMemoryViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4F7462929FAB81D00EF0BBC /* NumberMemoryTabBarController.swift */,
+				C4B9F14A29F93ED800BF3A4E /* NumberMemoryEasyViewController.swift */,
+				C4F7462B29FAB86800EF0BBC /* NumberMemoryMediumViewController.swift */,
+				C4F7462D29FAB87F00EF0BBC /* NumberMemoryHardViewController.swift */,
+				C4F7462F29FAB89700EF0BBC /* NumberMemoryExtremeViewController.swift */,
+			);
+			path = NumberMemoryViewControllers;
+			sourceTree = "<group>";
+		};
+		C4F7462629F9CCE100EF0BBC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C4F7462729F9CD3F00EF0BBC /* CustomTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C4F7463229FADCEF00EF0BBC /* PictureMemoryViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4F7463729FADD6300EF0BBC /* PictureMemoryTabBarController.swift */,
+				C4F7463329FADD1D00EF0BBC /* PictureMemory4x4ViewController.swift */,
+				C4F7463529FADD3000EF0BBC /* PictureMemory6x6ViewController.swift */,
+			);
+			path = PictureMemoryViewControllers;
+			sourceTree = "<group>";
+		};
+		C4F7463929FB23A100EF0BBC /* ResultsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */,
+				C4341B6629FB59EB0054D6F8 /* DetailResultListViewController.swift */,
+			);
+			path = ResultsViewControllers;
+			sourceTree = "<group>";
+		};
+		C4F7463C29FB255500EF0BBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4F7463D29FB257B00EF0BBC /* Game.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +254,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4B9F13429F82F6B00BF3A4E /* ViewController.swift in Sources */,
+				C4F7462829F9CD3F00EF0BBC /* CustomTextField.swift in Sources */,
+				C4F7463429FADD1D00EF0BBC /* PictureMemory4x4ViewController.swift in Sources */,
 				C4B9F13029F82F6B00BF3A4E /* AppDelegate.swift in Sources */,
+				C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */,
+				C4F7463B29FB254900EF0BBC /* ResultListViewController.swift in Sources */,
+				C4F7462A29FAB81D00EF0BBC /* NumberMemoryTabBarController.swift in Sources */,
+				C4F7462C29FAB86800EF0BBC /* NumberMemoryMediumViewController.swift in Sources */,
 				C4B9F13229F82F6B00BF3A4E /* SceneDelegate.swift in Sources */,
+				C4F7463029FAB89700EF0BBC /* NumberMemoryExtremeViewController.swift in Sources */,
+				C4F7462E29FAB87F00EF0BBC /* NumberMemoryHardViewController.swift in Sources */,
+				C4F7463829FADD6300EF0BBC /* PictureMemoryTabBarController.swift in Sources */,
+				C4B9F14B29F93ED800BF3A4E /* NumberMemoryEasyViewController.swift in Sources */,
+				C4341B6529FB4D870054D6F8 /* DataManager.swift in Sources */,
+				C4F7463629FADD3000EF0BBC /* PictureMemory6x6ViewController.swift in Sources */,
+				C4341B6729FB59EB0054D6F8 /* DetailResultListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,7 +417,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 848LVZR9JB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BrainBooster/Info.plist;
+				INFOPLIST_FILE = BrainBooster/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +445,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 848LVZR9JB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BrainBooster/Info.plist;
+				INFOPLIST_FILE = BrainBooster/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
