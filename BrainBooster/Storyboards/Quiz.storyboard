@@ -170,6 +170,10 @@
                                         <state key="normal" title="Начать заново">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="reloadButtonPressed" destination="qxI-uG-t73" eventType="touchUpInside" id="ikC-uU-Jac"/>
+                                            <segue destination="6at-Cv-Qz7" kind="unwind" unwindAction="unwindFor:" id="kmy-T4-NPB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,8 +201,13 @@
                             <constraint firstAttribute="trailing" secondItem="tlU-iJ-TCy" secondAttribute="trailing" id="v4u-B0-v1k"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="reloadButton" destination="7S6-tN-mCT" id="gqi-5t-vzb"/>
+                        <outlet property="resultLabel" destination="cGT-vl-Jen" id="xQI-C0-rZI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66j-h8-z12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6at-Cv-Qz7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2403.75" y="1.056338028169014"/>
         </scene>
