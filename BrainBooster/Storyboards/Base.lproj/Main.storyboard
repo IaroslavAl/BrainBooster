@@ -971,10 +971,10 @@
                                             <segue destination="2hy-xA-rQo" kind="show" id="pJ6-1O-RPK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kz7-0a-HOa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kz7-0a-HOa">
                                         <rect key="frame" x="0.0" y="130" width="300" height="55"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Coming soon..." cornerStyle="large">
+                                        <buttonConfiguration key="configuration" style="plain" title="Quiz" cornerStyle="large">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -982,6 +982,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="jfl-Rk-doc" kind="show" id="MOQ-XY-ZoU"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-UH-g7R">
                                         <rect key="frame" x="0.0" y="195" width="300" height="55"/>
@@ -1050,7 +1053,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYw-mM-9Nh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="1238"/>
+            <point key="canvasLocation" x="1442" y="1655"/>
         </scene>
         <!--Record in detail-->
         <scene sceneID="19b-Tj-taZ">
@@ -1079,7 +1082,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQl-Hw-xBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2295" y="1237"/>
+            <point key="canvasLocation" x="2293" y="1655"/>
         </scene>
         <!--Picture Memory-->
         <scene sceneID="NWw-q7-6Y4">
@@ -1105,6 +1108,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CvV-Vo-Rlq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1444" y="509"/>
+        </scene>
+        <!--Quiz-->
+        <scene sceneID="e3j-Kc-sQ9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="quiz" storyboardName="Quiz" id="jfl-Rk-doc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SE9-ew-X3V"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkH-1n-1Cs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="1012"/>
         </scene>
         <!--Hard-->
         <scene sceneID="8nb-FF-nMV">
