@@ -20,6 +20,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="DwS-Ak-xpO"/>
+                    <connections>
+                        <segue destination="CWt-kZ-YgD" kind="show" identifier="showQuestions" id="Lto-Nc-9TL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,6 +38,7 @@
                         <viewLayoutGuide key="safeArea" id="Kmx-Lx-bRb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nJy-Es-UwK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7q-7R-Id6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
