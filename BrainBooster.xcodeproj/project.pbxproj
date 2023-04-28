@@ -25,6 +25,7 @@
 		C4F7463829FADD6300EF0BBC /* PictureMemoryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463729FADD6300EF0BBC /* PictureMemoryTabBarController.swift */; };
 		C4F7463B29FB254900EF0BBC /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */; };
 		C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463D29FB257B00EF0BBC /* Game.swift */; };
+		C644F31E29FC3560007734F0 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C644F31D29FC3560007734F0 /* Quiz.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C4F7463729FADD6300EF0BBC /* PictureMemoryTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoryTabBarController.swift; sourceTree = "<group>"; };
 		C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
 		C4F7463D29FB257B00EF0BBC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C644F31D29FC3560007734F0 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				C4B9F13529F82F6B00BF3A4E /* Main.storyboard */,
 				C4B9F13A29F82F6E00BF3A4E /* LaunchScreen.storyboard */,
+				C644F31D29FC3560007734F0 /* Quiz.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				C4B9F13C29F82F6E00BF3A4E /* LaunchScreen.storyboard in Resources */,
 				C4B9F13929F82F6E00BF3A4E /* Assets.xcassets in Resources */,
 				C4B9F13729F82F6B00BF3A4E /* Main.storyboard in Resources */,
+				C644F31E29FC3560007734F0 /* Quiz.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
