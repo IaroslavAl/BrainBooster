@@ -132,6 +132,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="nJy-Es-UwK"/>
                     <connections>
+                        <outlet property="buttonsStackVIew" destination="16H-qp-5tK" id="pzf-7f-AKA"/>
+                        <outlet property="imageView" destination="8ZQ-QF-PKC" id="Ubc-cN-T66"/>
+                        <outlet property="progressView" destination="Bxk-TA-MWp" id="1P9-dc-vGc"/>
                         <segue destination="qxI-uG-t73" kind="presentation" modalPresentationStyle="fullScreen" id="Mi6-Wu-nIG"/>
                     </connections>
                 </viewController>
