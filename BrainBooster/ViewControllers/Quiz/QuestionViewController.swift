@@ -15,6 +15,7 @@ final class QuestionViewController: UIViewController {
     @IBOutlet private var imageView: UIImageView!
     
     var questions: [Question]!
+    var questionType: Mode!
     
     // MARK: - Private properties
     private var questionIndex = 0
@@ -45,6 +46,7 @@ final class QuestionViewController: UIViewController {
         
         resultVC.countOfRightAnswers = countOfRightAnswers
         resultVC.countOfQuestions = countOfQuestions
+        resultVC.questionType = questionType
     }
     
     // MARK: - Unwind for segue

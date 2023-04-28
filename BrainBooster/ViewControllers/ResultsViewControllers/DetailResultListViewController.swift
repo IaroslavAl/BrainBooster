@@ -40,6 +40,8 @@ final class DetailResultListViewController: UITableViewController {
             return DataManager.shared.getGamesCountByTimeType(for: gameType, mode: gameModes[section]).count
         case .pictureMemory:
             return 1
+        case .quiz:
+            return 1
         default:
             return 0
         }
@@ -59,6 +61,9 @@ final class DetailResultListViewController: UITableViewController {
         case .pictureMemory:
             let time = DataManager.shared.getAllGames(for: gameType, with: gameModes[indexPath.section])[indexPath.row].time ?? 0
             content.text = "Time: \(time) sec."
+        case .quiz:
+            let score = DataManager.shared.getAllGames(for: gameType, with: gameModes[indexPath.section])[indexPath.row].score ?? 0
+            content.text = "\(score) / 10"
         default:
             break
         }

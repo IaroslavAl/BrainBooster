@@ -20,7 +20,15 @@ final class StartViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let questionVC = segue.destination as? QuestionViewController else { return }
         
+        var questionType: Mode!
+        if sender as! [String] == Answer.shared.flags {
+            questionType = .flags
+        } else if sender as! [String] == Answer.shared.movies {
+            questionType = .movies
+        }
+        
         questionVC.questions = Question.getQuestions(answers: sender as? [String] ?? [""])
+        questionVC.questionType = questionType
     }
     
     @IBAction func themeButtonPressed(_ sender: UIButton) {

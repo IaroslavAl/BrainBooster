@@ -14,9 +14,12 @@ final class ResultViewController: UIViewController {
     
     var countOfRightAnswers: Int!
     var countOfQuestions: Int!
+    var questionType: Mode!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateRecord(for: .quiz, mode: questionType, countOfRightAnswers: countOfRightAnswers)
+
         resultLabel.text = """
             Вы правильно ответили на
             \(countOfRightAnswers ?? 0) из \(countOfQuestions ?? 0) вопросов! 😊
@@ -29,5 +32,25 @@ final class ResultViewController: UIViewController {
     
     @IBAction private func reloadButtonPressed() {
         dismiss(animated: true)
+    }
+    
+    private func updateRecord(for gameType: GameType, mode: Mode, countOfRightAnswers: Int) {
+        let dataManager = DataManager.shared
+        let games = dataManager.getAllGames()
+        
+        if let index = games.firstIndex(where: { $0.type == gameType && $0.mode == mode }) {
+            var gameToUpdate = games[index]
+            
+            if let gameScore = gameToUpdate.score, countOfRightAnswers > gameScore {
+                gameToUpdate.score = countOfRightAnswers
+                dataManager.updateGame(gameToUpdate, atIndex: index)
+            } else if gameToUpdate.score == nil {
+                gameToUpdate.score = countOfRightAnswers
+                dataManager.updateGame(gameToUpdate, atIndex: index)
+            }
+        } else {
+            let newGame = Game(type: gameType, mode: mode, score: countOfRightAnswers)
+            dataManager.addGame(newGame)
+        }
     }
 }

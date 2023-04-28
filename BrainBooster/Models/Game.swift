@@ -26,4 +26,6 @@ enum Mode: String {
     case extreme = "Extreme"
     case fourByFour = "4x4"
     case sixBySix = "6x6"
+    case flags = "Flags"
+    case movies = "Movies"
 }
