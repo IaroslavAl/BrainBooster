@@ -6,7 +6,7 @@
 //
 
 struct Question {
-    let flag: String
+    let image: String
     let answers: [String]
     let rightAnswer: String
     
@@ -30,7 +30,7 @@ struct Question {
             
             result.append(
                 Question(
-                    flag: rightAnswer,
+                    image: rightAnswer,
                     answers: [
                         rightAnswer,
                         wrongAnswers[0],

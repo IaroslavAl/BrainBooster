@@ -15,6 +15,7 @@ struct Game {
 
 enum GameType: String {
     case numberMemory = "Number Memory"
+    case quiz = "Quiz"
     case pictureMemory = "Picture Memory"
 }
 

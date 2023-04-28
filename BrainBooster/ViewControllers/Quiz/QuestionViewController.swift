@@ -10,7 +10,7 @@ import UIKit
 final class QuestionViewController: UIViewController {
 
     // MARK: - IBOutlets
-    @IBOutlet private var buttonsStackVIew: UIStackView!
+    @IBOutlet private var buttonsStackView: UIStackView!
     @IBOutlet private var progressView: UIProgressView!
     @IBOutlet private var imageView: UIImageView!
     
@@ -29,7 +29,7 @@ final class QuestionViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
+        guard let buttons = buttonsStackView.arrangedSubviews as? [UIButton] else { return }
         
         for button in buttons {
             button.layer.cornerRadius = button.frame.height / 5
@@ -57,7 +57,7 @@ final class QuestionViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction private func answerButtonPressed(_ sender: UIButton) {
-        guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
+        guard let buttons = buttonsStackView.arrangedSubviews as? [UIButton] else { return }
         guard !timerIsOn else { return }
         
         timerIsOn = true
@@ -85,7 +85,7 @@ final class QuestionViewController: UIViewController {
     
     // MARK: - Private functions
     private func updateUI() {
-        guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
+        guard let buttons = buttonsStackView.arrangedSubviews as? [UIButton] else { return }
         
         let question = questions[questionIndex]
         
@@ -97,8 +97,8 @@ final class QuestionViewController: UIViewController {
         let progress = Float(questionIndex) / Float(countOfQuestions)
         progressView.setProgress(progress, animated: true)
         
-        let flag = question.flag
-        imageView.image = UIImage(named: flag)
+        let image = question.image
+        imageView.image = UIImage(named: image)
     }
     
     private func nextQuestion() {
