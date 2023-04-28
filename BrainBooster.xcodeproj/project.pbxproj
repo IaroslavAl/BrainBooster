@@ -25,6 +25,12 @@
 		C4F7463829FADD6300EF0BBC /* PictureMemoryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463729FADD6300EF0BBC /* PictureMemoryTabBarController.swift */; };
 		C4F7463B29FB254900EF0BBC /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */; };
 		C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463D29FB257B00EF0BBC /* Game.swift */; };
+		C644F31E29FC3560007734F0 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C644F31D29FC3560007734F0 /* Quiz.storyboard */; };
+		C644F32129FC3698007734F0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32029FC3698007734F0 /* StartViewController.swift */; };
+		C644F32329FC36BA007734F0 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32229FC36BA007734F0 /* QuestionViewController.swift */; };
+		C644F32529FC36D8007734F0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32429FC36D8007734F0 /* ResultViewController.swift */; };
+		C644F32729FC3701007734F0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32629FC3701007734F0 /* Question.swift */; };
+		C644F32929FC3750007734F0 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32829FC3750007734F0 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		C4F7463729FADD6300EF0BBC /* PictureMemoryTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoryTabBarController.swift; sourceTree = "<group>"; };
 		C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
 		C4F7463D29FB257B00EF0BBC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C644F31D29FC3560007734F0 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		C644F32029FC3698007734F0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C644F32229FC36BA007734F0 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		C644F32429FC36D8007734F0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		C644F32629FC3701007734F0 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		C644F32829FC3750007734F0 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				C4341B6429FB4D870054D6F8 /* DataManager.swift */,
+				C644F32829FC3750007734F0 /* Answer.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -122,6 +135,7 @@
 			children = (
 				C4B9F13529F82F6B00BF3A4E /* Main.storyboard */,
 				C4B9F13A29F82F6E00BF3A4E /* LaunchScreen.storyboard */,
+				C644F31D29FC3560007734F0 /* Quiz.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -132,6 +146,7 @@
 				C4B9F14929F93DC600BF3A4E /* NumberMemoryViewControllers */,
 				C4F7463229FADCEF00EF0BBC /* PictureMemoryViewControllers */,
 				C4F7463929FB23A100EF0BBC /* ResultsViewControllers */,
+				C644F31F29FC3675007734F0 /* Quiz */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -179,8 +194,19 @@
 			isa = PBXGroup;
 			children = (
 				C4F7463D29FB257B00EF0BBC /* Game.swift */,
+				C644F32629FC3701007734F0 /* Question.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C644F31F29FC3675007734F0 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				C644F32029FC3698007734F0 /* StartViewController.swift */,
+				C644F32229FC36BA007734F0 /* QuestionViewController.swift */,
+				C644F32429FC36D8007734F0 /* ResultViewController.swift */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +270,7 @@
 				C4B9F13C29F82F6E00BF3A4E /* LaunchScreen.storyboard in Resources */,
 				C4B9F13929F82F6E00BF3A4E /* Assets.xcassets in Resources */,
 				C4B9F13729F82F6B00BF3A4E /* Main.storyboard in Resources */,
+				C644F31E29FC3560007734F0 /* Quiz.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,20 +282,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F7462829F9CD3F00EF0BBC /* CustomTextField.swift in Sources */,
+				C644F32129FC3698007734F0 /* StartViewController.swift in Sources */,
 				C4F7463429FADD1D00EF0BBC /* PictureMemory4x4ViewController.swift in Sources */,
 				C4B9F13029F82F6B00BF3A4E /* AppDelegate.swift in Sources */,
 				C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */,
 				C4F7463B29FB254900EF0BBC /* ResultListViewController.swift in Sources */,
 				C4F7462A29FAB81D00EF0BBC /* NumberMemoryTabBarController.swift in Sources */,
+				C644F32929FC3750007734F0 /* Answer.swift in Sources */,
 				C4F7462C29FAB86800EF0BBC /* NumberMemoryMediumViewController.swift in Sources */,
+				C644F32329FC36BA007734F0 /* QuestionViewController.swift in Sources */,
 				C4B9F13229F82F6B00BF3A4E /* SceneDelegate.swift in Sources */,
 				C4F7463029FAB89700EF0BBC /* NumberMemoryExtremeViewController.swift in Sources */,
 				C4F7462E29FAB87F00EF0BBC /* NumberMemoryHardViewController.swift in Sources */,
 				C4F7463829FADD6300EF0BBC /* PictureMemoryTabBarController.swift in Sources */,
+				C644F32729FC3701007734F0 /* Question.swift in Sources */,
 				C4B9F14B29F93ED800BF3A4E /* NumberMemoryEasyViewController.swift in Sources */,
 				C4341B6529FB4D870054D6F8 /* DataManager.swift in Sources */,
 				C4F7463629FADD3000EF0BBC /* PictureMemory6x6ViewController.swift in Sources */,
 				C4341B6729FB59EB0054D6F8 /* DetailResultListViewController.swift in Sources */,
+				C644F32529FC36D8007734F0 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
