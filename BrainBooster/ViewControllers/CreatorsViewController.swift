@@ -17,4 +17,9 @@ final class CreatorsViewController: UIViewController {
             photo.layer.cornerRadius = stackView.frame.height / 2
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        overrideUserInterfaceStyle = .light
+    }
 }
