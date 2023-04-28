@@ -10,11 +10,10 @@ import UIKit
 final class CreatorsViewController: UIViewController {
     
     @IBOutlet var photos: [UIImageView]!
-    @IBOutlet var stackView: UIStackView!
     
     override func viewWillLayoutSubviews() {
         for photo in photos {
-            photo.layer.cornerRadius = stackView.frame.height / 2
+            photo.layer.cornerRadius = photo.frame.height / 2
         }
     }
     
