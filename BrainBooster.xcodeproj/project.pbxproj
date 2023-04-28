@@ -26,6 +26,7 @@
 		C4F7463B29FB254900EF0BBC /* ResultListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */; };
 		C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463D29FB257B00EF0BBC /* Game.swift */; };
 		C644F31E29FC3560007734F0 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C644F31D29FC3560007734F0 /* Quiz.storyboard */; };
+		C644F32129FC3698007734F0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32029FC3698007734F0 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		C4F7463A29FB254900EF0BBC /* ResultListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListViewController.swift; sourceTree = "<group>"; };
 		C4F7463D29FB257B00EF0BBC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C644F31D29FC3560007734F0 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		C644F32029FC3698007734F0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				C4F7463C29FB255500EF0BBC /* Models */,
 				C4B9F14829F91E4200BF3A4E /* ViewControllers */,
+				C644F31F29FC3675007734F0 /* Quiz */,
 				C4B9F14729F91D4500BF3A4E /* Storyboards */,
 				C4F7462629F9CCE100EF0BBC /* CustomViews */,
 				C4341B6829FC1EA30054D6F8 /* Services */,
@@ -186,6 +189,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C644F31F29FC3675007734F0 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				C644F32029FC3698007734F0 /* StartViewController.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F7462829F9CD3F00EF0BBC /* CustomTextField.swift in Sources */,
+				C644F32129FC3698007734F0 /* StartViewController.swift in Sources */,
 				C4F7463429FADD1D00EF0BBC /* PictureMemory4x4ViewController.swift in Sources */,
 				C4B9F13029F82F6B00BF3A4E /* AppDelegate.swift in Sources */,
 				C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */,
