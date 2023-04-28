@@ -50,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Темы" id="DwS-Ak-xpO"/>
                     <connections>
+                        <outlet property="buttonStackView" destination="zUb-CE-cYe" id="wUb-RJ-mJz"/>
                         <segue destination="CWt-kZ-YgD" kind="show" identifier="showQuestions" id="Lto-Nc-9TL"/>
                     </connections>
                 </viewController>
@@ -138,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="1635" y="2.112676056338028"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="xIx-mm-hXU">
             <objects>
-                <viewController id="qxI-uG-t73" sceneMemberID="viewController">
+                <viewController id="qxI-uG-t73" customClass="ResultViewController" customModule="BrainBooster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="byy-dH-vyx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
