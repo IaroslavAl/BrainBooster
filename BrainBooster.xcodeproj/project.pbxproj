@@ -27,6 +27,7 @@
 		C4F7463E29FB257B00EF0BBC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7463D29FB257B00EF0BBC /* Game.swift */; };
 		C644F31E29FC3560007734F0 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C644F31D29FC3560007734F0 /* Quiz.storyboard */; };
 		C644F32129FC3698007734F0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32029FC3698007734F0 /* StartViewController.swift */; };
+		C644F32329FC36BA007734F0 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32229FC36BA007734F0 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C4F7463D29FB257B00EF0BBC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C644F31D29FC3560007734F0 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		C644F32029FC3698007734F0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C644F32229FC36BA007734F0 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C644F32029FC3698007734F0 /* StartViewController.swift */,
+				C644F32229FC36BA007734F0 /* QuestionViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				C4F7463B29FB254900EF0BBC /* ResultListViewController.swift in Sources */,
 				C4F7462A29FAB81D00EF0BBC /* NumberMemoryTabBarController.swift in Sources */,
 				C4F7462C29FAB86800EF0BBC /* NumberMemoryMediumViewController.swift in Sources */,
+				C644F32329FC36BA007734F0 /* QuestionViewController.swift in Sources */,
 				C4B9F13229F82F6B00BF3A4E /* SceneDelegate.swift in Sources */,
 				C4F7463029FAB89700EF0BBC /* NumberMemoryExtremeViewController.swift in Sources */,
 				C4F7462E29FAB87F00EF0BBC /* NumberMemoryHardViewController.swift in Sources */,
