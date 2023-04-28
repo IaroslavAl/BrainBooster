@@ -21,9 +21,9 @@ final class StartViewController: UIViewController {
         guard let questionVC = segue.destination as? QuestionViewController else { return }
         
         var questionType: Mode!
-        if sender as? [String] == Answer.shared.flags {
+        if sender as! [String] == Answer.shared.flags {
             questionType = .flags
-        } else if sender as? [String] == Answer.shared.movies {
+        } else if sender as! [String] == Answer.shared.movies {
             questionType = .movies
         }
         
