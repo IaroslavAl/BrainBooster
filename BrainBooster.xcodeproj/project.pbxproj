@@ -28,6 +28,7 @@
 		C644F31E29FC3560007734F0 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C644F31D29FC3560007734F0 /* Quiz.storyboard */; };
 		C644F32129FC3698007734F0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32029FC3698007734F0 /* StartViewController.swift */; };
 		C644F32329FC36BA007734F0 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32229FC36BA007734F0 /* QuestionViewController.swift */; };
+		C644F32529FC36D8007734F0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644F32429FC36D8007734F0 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		C644F31D29FC3560007734F0 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		C644F32029FC3698007734F0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		C644F32229FC36BA007734F0 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		C644F32429FC36D8007734F0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				C644F32029FC3698007734F0 /* StartViewController.swift */,
 				C644F32229FC36BA007734F0 /* QuestionViewController.swift */,
+				C644F32429FC36D8007734F0 /* ResultViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				C4341B6529FB4D870054D6F8 /* DataManager.swift in Sources */,
 				C4F7463629FADD3000EF0BBC /* PictureMemory6x6ViewController.swift in Sources */,
 				C4341B6729FB59EB0054D6F8 /* DetailResultListViewController.swift in Sources */,
+				C644F32529FC36D8007734F0 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
