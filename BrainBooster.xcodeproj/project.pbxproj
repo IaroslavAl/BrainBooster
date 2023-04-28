@@ -103,7 +103,6 @@
 			children = (
 				C4F7463C29FB255500EF0BBC /* Models */,
 				C4B9F14829F91E4200BF3A4E /* ViewControllers */,
-				C644F31F29FC3675007734F0 /* Quiz */,
 				C4B9F14729F91D4500BF3A4E /* Storyboards */,
 				C4F7462629F9CCE100EF0BBC /* CustomViews */,
 				C4341B6829FC1EA30054D6F8 /* Services */,
@@ -147,6 +146,7 @@
 				C4B9F14929F93DC600BF3A4E /* NumberMemoryViewControllers */,
 				C4F7463229FADCEF00EF0BBC /* PictureMemoryViewControllers */,
 				C4F7463929FB23A100EF0BBC /* ResultsViewControllers */,
+				C644F31F29FC3675007734F0 /* Quiz */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
