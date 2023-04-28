@@ -24,7 +24,7 @@ final class ResultViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        reloadButton.layer.cornerRadius = reloadButton.frame.height / 2
+        reloadButton.layer.cornerRadius = reloadButton.frame.height / 5
     }
     
     @IBAction private func reloadButtonPressed() {

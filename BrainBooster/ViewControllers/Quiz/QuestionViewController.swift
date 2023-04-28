@@ -32,7 +32,7 @@ final class QuestionViewController: UIViewController {
         guard let buttons = buttonsStackVIew.arrangedSubviews as? [UIButton] else { return }
         
         for button in buttons {
-            button.layer.cornerRadius = button.frame.height / 2
+            button.layer.cornerRadius = button.frame.height / 5
         }
         
         imageView.layer.cornerRadius = imageView.frame.height / 15
