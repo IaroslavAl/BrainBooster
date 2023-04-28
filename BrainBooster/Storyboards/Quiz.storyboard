@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zUb-CE-cYe">
-                                <rect key="frame" x="80" y="236.5" width="160" height="95"/>
+                                <rect key="frame" x="25" y="236.5" width="270" height="95"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-9p-Rlw">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="42.5"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tp0-bA-11B">
-                                        <rect key="frame" x="0.0" y="52.5" width="160" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="52.5" width="270" height="42.5"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -48,10 +48,11 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zUb-CE-cYe" secondAttribute="trailing" constant="25" id="0a7-W3-dhJ"/>
                             <constraint firstItem="WXG-9p-Rlw" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.075" id="U6L-ah-8we"/>
                             <constraint firstItem="zUb-CE-cYe" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="eFL-sR-Mgz"/>
-                            <constraint firstItem="WXG-9p-Rlw" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="f47-BZ-Awx"/>
                             <constraint firstItem="zUb-CE-cYe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sVz-ai-Zcf"/>
+                            <constraint firstItem="zUb-CE-cYe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="yus-gg-MFk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Темы" id="DwS-Ak-xpO"/>
