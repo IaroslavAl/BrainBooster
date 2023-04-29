@@ -268,9 +268,9 @@ extension NumberMemoryEasyViewController: UITextFieldDelegate {
                 if nextTextField.text == "" {
                     nextTextField.becomeFirstResponder()
                 }
-            } else {
-                checkNumbers()
             }
+            let isAllNumber = numberTextFields.allSatisfy { $0.text?.isEmpty == false }
+            if isAllNumber { checkNumbers() }
         }
         
         return false

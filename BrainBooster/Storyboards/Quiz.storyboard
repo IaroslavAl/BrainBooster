@@ -18,11 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zUb-CE-cYe">
-                                <rect key="frame" x="25" y="211" width="270" height="146"/>
+                                <rect key="frame" x="25" y="204" width="270" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-9p-Rlw">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="68"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="75"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="jwV-pc-9ta"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Страны">
@@ -33,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tp0-bA-11B">
-                                        <rect key="frame" x="0.0" y="78" width="270" height="68"/>
+                                        <rect key="frame" x="0.0" y="85" width="270" height="75"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -50,7 +53,6 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zUb-CE-cYe" secondAttribute="trailing" constant="25" id="0a7-W3-dhJ"/>
                             <constraint firstItem="zUb-CE-cYe" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="eFL-sR-Mgz"/>
-                            <constraint firstItem="WXG-9p-Rlw" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.12" id="kB5-Kd-gmn"/>
                             <constraint firstItem="zUb-CE-cYe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sVz-ai-Zcf"/>
                             <constraint firstItem="zUb-CE-cYe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="yus-gg-MFk"/>
                         </constraints>
@@ -173,20 +175,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="252"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGT-vl-Jen">
-                                <rect key="frame" x="16" y="260" width="288" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <rect key="frame" x="16" y="260" width="288" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlU-iJ-TCy">
-                                <rect key="frame" x="0.0" y="292.5" width="320" height="255.5"/>
+                                <rect key="frame" x="0.0" y="301" width="320" height="247"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S6-tN-mCT">
-                                        <rect key="frame" x="48" y="95.5" width="224" height="64"/>
+                                        <rect key="frame" x="25" y="86" width="270" height="75"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="DvV-ml-Yam"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Выбрать тему">
+                                        <state key="normal" title="Новый Quiz">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -197,9 +202,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="7S6-tN-mCT" firstAttribute="centerY" secondItem="tlU-iJ-TCy" secondAttribute="centerY" id="7pa-g4-Q7s"/>
-                                    <constraint firstItem="7S6-tN-mCT" firstAttribute="width" secondItem="tlU-iJ-TCy" secondAttribute="width" multiplier="0.7" id="KoX-8i-rMa"/>
-                                    <constraint firstItem="7S6-tN-mCT" firstAttribute="centerX" secondItem="tlU-iJ-TCy" secondAttribute="centerX" id="PdE-he-2M2"/>
-                                    <constraint firstItem="7S6-tN-mCT" firstAttribute="height" secondItem="tlU-iJ-TCy" secondAttribute="height" multiplier="0.25" id="Rws-ow-g6G"/>
+                                    <constraint firstItem="7S6-tN-mCT" firstAttribute="leading" secondItem="tlU-iJ-TCy" secondAttribute="leading" constant="25" id="Zt2-Ll-Fh2"/>
+                                    <constraint firstAttribute="trailing" secondItem="7S6-tN-mCT" secondAttribute="trailing" constant="25" id="xbe-MY-gpE"/>
                                 </constraints>
                             </view>
                         </subviews>
