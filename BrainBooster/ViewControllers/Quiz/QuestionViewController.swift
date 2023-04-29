@@ -49,14 +49,6 @@ final class QuestionViewController: UIViewController {
         resultVC.questionType = questionType
     }
     
-    // MARK: - Unwind for segue
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-        questionIndex = 0
-        countOfRightAnswers = 0
-        questions = questions.shuffled()
-        updateUI()
-    }
-    
     // MARK: - IBActions
     @IBAction private func answerButtonPressed(_ sender: UIButton) {
         guard let buttons = buttonsStackView.arrangedSubviews as? [UIButton] else { return }
@@ -90,6 +82,8 @@ final class QuestionViewController: UIViewController {
         guard let buttons = buttonsStackView.arrangedSubviews as? [UIButton] else { return }
         
         let question = questions[questionIndex]
+        title = "Вопрос \(questionIndex + 1) из \(countOfQuestions)"
+        progressView.transform = CGAffineTransform(scaleX: 1, y: 2)
         
         for (button, answer) in zip(buttons, question.answers) {
             button.backgroundColor = .systemBlue
@@ -98,7 +92,7 @@ final class QuestionViewController: UIViewController {
         
         let progress = Float(questionIndex) / Float(countOfQuestions)
         progressView.setProgress(progress, animated: true)
-        
+    
         let image = question.image
         imageView.image = UIImage(named: image)
     }

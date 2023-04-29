@@ -939,10 +939,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hHM-zD-MJk">
-                                <rect key="frame" x="25" y="24" width="270" height="520"/>
+                                <rect key="frame" x="25" y="132.5" width="270" height="366.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePy-7I-3f7">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="96"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="65.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Number Memory" cornerStyle="large">
                                             <backgroundConfiguration key="background">
@@ -957,7 +957,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89e-sX-RrM">
-                                        <rect key="frame" x="0.0" y="106" width="270" height="96"/>
+                                        <rect key="frame" x="0.0" y="75.5" width="270" height="65"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Picture Memory" cornerStyle="large">
                                             <backgroundConfiguration key="background">
@@ -972,7 +972,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kz7-0a-HOa">
-                                        <rect key="frame" x="0.0" y="212" width="270" height="96"/>
+                                        <rect key="frame" x="0.0" y="150.5" width="270" height="65.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Quiz" cornerStyle="large">
                                             <backgroundConfiguration key="background">
@@ -987,13 +987,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-UH-g7R">
-                                        <rect key="frame" x="0.0" y="318" width="270" height="96"/>
+                                        <rect key="frame" x="0.0" y="226" width="270" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saQ-kg-524">
-                                        <rect key="frame" x="0.0" y="424" width="270" height="96"/>
+                                        <rect key="frame" x="0.0" y="301" width="270" height="65.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Results" cornerStyle="large">
                                             <backgroundConfiguration key="background">
@@ -1013,9 +1013,10 @@
                         <viewLayoutGuide key="safeArea" id="BYu-Ux-vjg"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BYu-Ux-vjg" firstAttribute="bottom" secondItem="hHM-zD-MJk" secondAttribute="bottom" constant="20" id="30l-9O-W0v"/>
                             <constraint firstItem="BYu-Ux-vjg" firstAttribute="trailing" secondItem="hHM-zD-MJk" secondAttribute="trailing" constant="25" id="5kh-3A-dxj"/>
                             <constraint firstItem="hHM-zD-MJk" firstAttribute="leading" secondItem="BYu-Ux-vjg" secondAttribute="leading" constant="25" id="IAt-bP-MdQ"/>
-                            <constraint firstItem="hHM-zD-MJk" firstAttribute="centerY" secondItem="8A2-mA-HJM" secondAttribute="centerY" id="pIH-5z-gaf"/>
+                            <constraint firstItem="hHM-zD-MJk" firstAttribute="top" secondItem="BYu-Ux-vjg" secondAttribute="top" constant="20" id="PPo-hR-5ZE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="display" catalog="system" id="lBQ-7F-lth"/>
@@ -1491,8 +1492,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="fTo-6w-hFA"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bUf-UQ-8H3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="pkC-fu-8Sg" kind="relationship" relationship="viewControllers" id="TTQ-Xt-JYV"/>

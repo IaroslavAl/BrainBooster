@@ -18,11 +18,12 @@ final class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         updateRecord(for: .quiz, mode: questionType, countOfRightAnswers: countOfRightAnswers)
 
         resultLabel.text = """
             Вы правильно ответили на
-            \(countOfRightAnswers ?? 0) из \(countOfQuestions ?? 0) вопросов! 😊
+            \(countOfRightAnswers ?? 0) из \(countOfQuestions ?? 0) вопросов! ✅
             """
     }
     
@@ -31,7 +32,11 @@ final class ResultViewController: UIViewController {
     }
     
     @IBAction private func reloadButtonPressed() {
-        dismiss(animated: true)
+        navigationController?.viewControllers.forEach { viewController in
+            if let startVC = viewController as? StartViewController {
+                navigationController?.popToViewController(startVC, animated: true)
+            }
+        }
     }
     
     private func updateRecord(for gameType: GameType, mode: Mode, countOfRightAnswers: Int) {
