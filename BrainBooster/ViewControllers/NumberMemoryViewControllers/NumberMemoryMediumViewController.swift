@@ -67,11 +67,7 @@ final class NumberMemoryMediumViewController: UIViewController {
         score = 0
         timerLabel.text = ""
         
-        var randomNumbers = Array(repeating: 0, count: numberTextFields.count)
-        randomNumbers.indices.forEach { index in
-            randomNumbers[index] = Int.random(in: 0...9)
-        }
-        self.randomNumbers = randomNumbers
+        createRandomNumbers()
         
         for (index, textField) in numberTextFields.enumerated() {
             textField.text = String(randomNumbers[index])
@@ -79,13 +75,13 @@ final class NumberMemoryMediumViewController: UIViewController {
             textField.isHidden = false
         }
         
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in
-            for textField in self.numberTextFields {
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { [unowned self] _ in
+            for textField in numberTextFields {
                 textField.text = ""
                 textField.isUserInteractionEnabled = true
-                self.numberTextFields.first?.becomeFirstResponder()
+                numberTextFields.first?.becomeFirstResponder()
             }
-            self.startCountdownTimer()
+            startCountdownTimer()
         }
     }
     
@@ -99,6 +95,21 @@ final class NumberMemoryMediumViewController: UIViewController {
             previousTextField.becomeFirstResponder()
             previousTextField.text = ""
         }
+    }
+    
+    func restartAlert() {
+        let alert = UIAlertController(
+            title: "Restart the game?",
+            message: "The current progress is reset and the game will restart.",
+            preferredStyle: .alert)
+        let restartAction = UIAlertAction(title: "Restart", style: .default) { [unowned self] _ in
+            restart()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        alert.addAction(cancelAction)
+        alert.addAction(restartAction)
+        present(alert, animated: true)
     }
     
     private func checkNumbers() {
@@ -118,38 +129,32 @@ final class NumberMemoryMediumViewController: UIViewController {
             textField.text = String(randomNumbers[index])
         }
         
-        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) {_ in
-            for textField in self.numberTextFields {
+        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { [unowned self] _ in
+            for textField in numberTextFields {
                 textField.text = ""
             }
             
-            self.currentCountdownTime == 0
-            ? self.finish()
-            : self.nextNumbers()
+            currentCountdownTime == 0
+            ? finish()
+            : nextNumbers()
         }
     }
     
     private func nextNumbers() {
-        var randomNumbers = Array(repeating: 0, count: numberTextFields.count)
+        createRandomNumbers()
         
-        randomNumbers.indices.forEach { index in
-            randomNumbers[index] = Int.random(in: 0...9)
-        }
-        
-        self.randomNumbers = randomNumbers
-        
-        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) {_ in
-            for (index, textField) in self.numberTextFields.enumerated() {
+        Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { [unowned self] _ in
+            for (index, textField) in numberTextFields.enumerated() {
                 textField.textColor = .systemBlue
                 textField.text = String(randomNumbers[index])
             }
             
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) {_ in
-                for textField in self.numberTextFields {
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { [unowned self] _ in
+                for textField in numberTextFields {
                     textField.text = ""
                     textField.isUserInteractionEnabled = true
                 }
-                self.numberTextFields.first?.becomeFirstResponder()
+                numberTextFields.first?.becomeFirstResponder()
             }
         }
     }
@@ -162,7 +167,7 @@ final class NumberMemoryMediumViewController: UIViewController {
         pickerLabel.isHidden = false
         timerLabel.text = ""
         
-        for textField in self.numberTextFields {
+        for textField in numberTextFields {
             textField.text = ""
             textField.isUserInteractionEnabled = false
             textField.isHidden = true
@@ -173,15 +178,22 @@ final class NumberMemoryMediumViewController: UIViewController {
         timerLabel.text = "Your score\n \(score)"
         updateRecord(for: .numberMemory, mode: .medium, timeType: countdownTime, score: score)
         
-        for textField in self.numberTextFields {
+        for textField in numberTextFields {
             textField.isHidden = true
         }
         
-        Timer.scheduledTimer(withTimeInterval: 2.5, repeats: false) {_ in
-            self.startButton.isHidden = false
-            self.timerPicker.isHidden = false
-            self.pickerLabel.isHidden = false
-            self.timerLabel.text = ""
+        Timer.scheduledTimer(withTimeInterval: 2.5, repeats: false) { [weak self] _ in
+            guard let self = self else { return }
+            if let startButton = startButton,
+               let timerPicker = timerPicker,
+               let pickerLabel = pickerLabel,
+               let timerLabel = timerLabel {
+                
+                startButton.isHidden = false
+                timerPicker.isHidden = false
+                pickerLabel.isHidden = false
+                timerLabel.text = ""
+            }
         }
     }
     
@@ -210,11 +222,11 @@ final class NumberMemoryMediumViewController: UIViewController {
     
     private func startCountdownTimer() {
         currentCountdownTime = countdownTime
-        countdownTimer = Timer(timeInterval: 1, repeats: true) {_ in
-            self.currentCountdownTime -= 1
-            self.updateTimerLabel()
-            if self.currentCountdownTime == 0 {
-                self.stopCountDownTimer()
+        countdownTimer = Timer(timeInterval: 1, repeats: true) { [unowned self] _ in
+            currentCountdownTime -= 1
+            updateTimerLabel()
+            if currentCountdownTime == 0 {
+                stopCountDownTimer()
             }
         }
         
@@ -232,19 +244,12 @@ final class NumberMemoryMediumViewController: UIViewController {
         timerLabel.text = "Last one"
     }
     
-    func restartAlert() {
-        let alert = UIAlertController(
-            title: "Restart the game?",
-            message: "The current progress is reset and the game will restart.",
-            preferredStyle: .alert)
-        let restartAction = UIAlertAction(title: "Restart", style: .default) {_ in
-            self.restart()
+    private func createRandomNumbers() {
+        var randomNumbers = Array(repeating: 0, count: numberTextFields.count)
+        randomNumbers.indices.forEach { index in
+            randomNumbers[index] = Int.random(in: 0...9)
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
-        
-        alert.addAction(cancelAction)
-        alert.addAction(restartAction)
-        present(alert, animated: true)
+        self.randomNumbers = randomNumbers
     }
 }
 

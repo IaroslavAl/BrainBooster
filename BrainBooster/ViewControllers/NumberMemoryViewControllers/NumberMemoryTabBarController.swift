@@ -9,7 +9,7 @@ import UIKit
 
 final class NumberMemoryTabBarController: UITabBarController {
     @IBAction func resetAction(_ sender: UIBarButtonItem) {
-        if let selectedVC = self.selectedViewController {
+        if let selectedVC = selectedViewController {
             switch selectedVC {
             case let numberMemoryEasyVC as NumberMemoryEasyViewController:
                 numberMemoryEasyVC.restartAlert()

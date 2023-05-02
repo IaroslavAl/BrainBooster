@@ -45,8 +45,8 @@ final class PictureMemory6x6ViewController: UIViewController {
             button.isHidden = false
         }
         
-        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) {_ in
-            for cell in self.cellButtons {
+        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { [unowned self] _ in
+            for cell in cellButtons {
                 cell.setTitle("🟦", for: .normal)
             }
             self.startCountdownTimer()
@@ -123,7 +123,7 @@ final class PictureMemory6x6ViewController: UIViewController {
         
         stopCountDownTimer()
         
-        for cell in self.cellButtons {
+        for cell in cellButtons {
             cell.setTitle("", for: .normal)
             cell.isHidden = true
             cell.isEnabled = true
@@ -156,9 +156,9 @@ final class PictureMemory6x6ViewController: UIViewController {
     
     private func startCountdownTimer() {
         countdownTime = 0
-        timer = Timer(timeInterval: 1, repeats: true) {_ in
-            self.countdownTime += 1
-            self.updateTimerLabel()
+        timer = Timer(timeInterval: 1, repeats: true) { [unowned self] _ in
+            countdownTime += 1
+            updateTimerLabel()
         }
         
         timerLabel.text = "\(countdownTime)"
@@ -180,8 +180,8 @@ final class PictureMemory6x6ViewController: UIViewController {
             title: "Restart the game?",
             message: "The current progress is reset and the game will restart.",
             preferredStyle: .alert)
-        let restartAction = UIAlertAction(title: "Restart", style: .default) {_ in
-            self.restart()
+        let restartAction = UIAlertAction(title: "Restart", style: .default) { [unowned self] _ in
+            restart()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
         
